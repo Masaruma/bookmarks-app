@@ -1,6 +1,7 @@
 package com.example.bookmarks.mizo.masaru
 
 import org.junit.jupiter.api.Test
+import org.mockito.Mock
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
@@ -36,6 +37,26 @@ class BookmarkControllerTest {
         """.trimIndent()
 
         mockMvc.perform(get("/api/v1/bookmarks"))
+            .andExpect(MockMvcResultMatchers.content().json(expectedResponse))
+    }
+
+    @Test
+    fun `should return 200 for GET single bookmark`() {
+        mockMvc.perform(get("/api/v1/bookmarks/1000"))
+            .andExpect(status().isOk)
+    }
+
+    @Test
+    fun `should return single bookmark JSON`() {
+        val expectedResponse = """
+            {
+            "id": 100,
+            "title": "My First Bookmark",
+            "url": "www.example.com"   
+             }
+        """.trimIndent()
+
+        mockMvc.perform(get("/api/v1/bookmarks/100"))
             .andExpect(MockMvcResultMatchers.content().json(expectedResponse))
     }
 }
