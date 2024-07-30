@@ -37,6 +37,5 @@ class BookmarkControllerTest {
 
         mockMvc.perform(get("/api/v1/bookmarks"))
             .andExpect(MockMvcResultMatchers.content().json(expectedResponse))
-
     }
 }

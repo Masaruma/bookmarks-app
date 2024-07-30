@@ -7,18 +7,10 @@ import org.springframework.web.bind.annotation.RestController
 class BookmarkController {
 
     @GetMapping("/api/v1/bookmarks")
-    fun getAllBookmarks(): String{
-        return """[
-            {
-                "id": 1,
-                "title": "My First Bookmark",
-                "url": "www.example.com"
-            },
-            {
-                "id": 2,
-                "title": "Spring Boot Overview",
-                "url": "www.spring-boot.com"
-            }
-        ]"""
+    fun getAllBookmarks(): List<Bookmark> {
+        return listOf(
+            Bookmark(1, "My First Bookmark", "www.example.com"),
+            Bookmark(2, "Spring Boot Overview", "www.spring-boot.com")
+        )
     }
 }
