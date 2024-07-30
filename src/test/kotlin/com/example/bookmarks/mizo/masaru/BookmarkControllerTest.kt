@@ -1,17 +1,19 @@
 package com.example.bookmarks.mizo.masaru
 
 import org.junit.jupiter.api.Test
-import org.mockito.Mock
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
+import kotlin.test.assertEquals
 
 class BookmarkControllerTest {
 
+    val bookmarkService: BookmarkService = MockBookmarkService()
+
     val mockMvc: MockMvc = MockMvcBuilders
-        .standaloneSetup(BookmarkController()).build()
+        .standaloneSetup(BookmarkController(bookmarkService)).build()
 
     @Test
     fun `should return 200 for GET all bookmarks`() {
@@ -38,6 +40,8 @@ class BookmarkControllerTest {
 
         mockMvc.perform(get("/api/v1/bookmarks"))
             .andExpect(MockMvcResultMatchers.content().json(expectedResponse))
+
+
     }
 
     @Test
