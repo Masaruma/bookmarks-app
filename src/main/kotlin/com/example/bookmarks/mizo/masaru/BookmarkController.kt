@@ -1,22 +1,23 @@
 package com.example.bookmarks.mizo.masaru
 
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 class BookmarkController(val bookmarkService: BookmarkService) {
 
     @GetMapping("/api/v1/bookmarks")
     fun getAllBookmarks(): List<Bookmark> {
-        return listOf(
-            Bookmark(1, "My First Bookmark", "www.example.com"),
-            Bookmark(2, "Spring Boot Overview", "www.spring-boot.com")
-        )
+        return bookmarkService.getAllBookmarks()
+
     }
 
     @GetMapping("/api/v1/bookmarks/{id}")
     fun getSingleBookmark(@PathVariable("id") id: Long): Bookmark {
-        return Bookmark(100, "My First Bookmark", "www.example.com")
+        return bookmarkService.getSingleBookmark(id)
+    }
+
+    @PostMapping("/api/v1/bookmarks")
+    fun saveBookmark(@RequestBody bookmark: Bookmark): Bookmark {
+        return bookmarkService.saveBookmark(bookmark)
     }
 }

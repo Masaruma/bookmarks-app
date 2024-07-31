@@ -1,11 +1,14 @@
 package com.example.bookmarks.mizo.masaru
 
 import org.junit.jupiter.api.Test
+import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
+import java.awt.PageAttributes
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
@@ -49,8 +52,12 @@ class BookmarkControllerTest {
     @Test
     fun `should call mock bookmark service`() {
        // when a controller is called
+        val bookmarkController = BookmarkController(mockBookmarkService)
+
+        bookmarkController.getAllBookmarks()
 
         // assert that mockbookmarkservice.getAllBookmarks() is called
+        assertTrue(mockBookmarkService.getAllBookmarksWasCalled)
     }
 
     @Test
@@ -60,7 +67,8 @@ class BookmarkControllerTest {
     }
 
     @Test
-    fun `should return single bookmark JSON`() {
+    fun `should call mock single bookmark service and return single bookmark JSON`() {
+
         val expectedResponse = """
             {
             "id": 100,
@@ -71,5 +79,22 @@ class BookmarkControllerTest {
 
         mockMvc.perform(get("/api/v1/bookmarks/100"))
             .andExpect(MockMvcResultMatchers.content().json(expectedResponse))
+
+        assertTrue(mockBookmarkService.getSingleBookmarkWasCalled)
+    }
+
+    @Test
+    fun `should return 200 for save bookmark and invoke bookmark service`() {
+        val requestBody = """
+            { "title": "sample", "url": "sample.com" }
+        """.trimIndent()
+
+        mockMvc.perform(post("/api/v1/bookmarks")
+            .content(requestBody)
+            .contentType(MediaType.APPLICATION_JSON))
+            .andExpect(status().isOk)
+     // TODO: Verify if the the response from mockMVC is equal to JSON content
+
+        assertTrue(mockBookmarkService.saveBookmarkWasCalled)
     }
 }
