@@ -7,13 +7,14 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 class BookmarkControllerTest {
 
-    val bookmarkService: BookmarkService = MockBookmarkService()
+    val mockBookmarkService = MockBookmarkService()
 
     val mockMvc: MockMvc = MockMvcBuilders
-        .standaloneSetup(BookmarkController(bookmarkService)).build()
+        .standaloneSetup(BookmarkController(mockBookmarkService)).build()
 
     @Test
     fun `should return 200 for GET all bookmarks`() {
@@ -23,6 +24,9 @@ class BookmarkControllerTest {
 
     @Test
     fun `should return bookmark response list`() {
+
+        // you need to return a list from the mockBookmarkService
+
         val expectedResponse = """
              [
               {
@@ -40,8 +44,13 @@ class BookmarkControllerTest {
 
         mockMvc.perform(get("/api/v1/bookmarks"))
             .andExpect(MockMvcResultMatchers.content().json(expectedResponse))
+    }
 
+    @Test
+    fun `should call mock bookmark service`() {
+       // when a controller is called
 
+        // assert that mockbookmarkservice.getAllBookmarks() is called
     }
 
     @Test
