@@ -1,1 +1,0 @@
-INSERT INTO bookmark VALUES (nextval('bookmark_id_seq'),'sample','sample.com')
