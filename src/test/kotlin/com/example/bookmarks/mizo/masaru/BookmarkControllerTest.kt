@@ -3,8 +3,7 @@ package com.example.bookmarks.mizo.masaru
 import org.junit.jupiter.api.Test
 import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
@@ -97,4 +96,14 @@ class BookmarkControllerTest {
 
         assertTrue(mockBookmarkService.saveBookmarkWasCalled)
     }
+
+    @Test
+    fun `should return status 204 for delete request and call service`(){
+        // TODO
+        mockMvc.perform(delete("/api/v1/bookmarks/100"))
+            .andExpect(status().isNoContent)
+
+        assertTrue(mockBookmarkService.deleteBookWasCalled)
+    }
+
 }

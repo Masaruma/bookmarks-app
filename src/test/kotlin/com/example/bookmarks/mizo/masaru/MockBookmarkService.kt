@@ -4,6 +4,8 @@ class MockBookmarkService: BookmarkService {
     var getAllBookmarksWasCalled = false
     var getSingleBookmarkWasCalled = false
     var saveBookmarkWasCalled = false
+    var deleteBookWasCalled = false
+
     override fun getAllBookmarks(): List<Bookmark> {
         println("Mock was called")
         getAllBookmarksWasCalled = true
@@ -21,6 +23,10 @@ class MockBookmarkService: BookmarkService {
     override fun saveBookmark(bookmark: Bookmark): Bookmark {
         saveBookmarkWasCalled = true
         return Bookmark(1,"","")
+    }
+
+    override fun deleteBookmark(id: Long) {
+        deleteBookWasCalled = true
     }
 
 

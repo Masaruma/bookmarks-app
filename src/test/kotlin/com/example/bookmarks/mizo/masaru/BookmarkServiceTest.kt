@@ -1,6 +1,7 @@
 package com.example.bookmarks.mizo.masaru
 
 import io.mockk.every
+import io.mockk.just
 import io.mockk.mockk
 import io.mockk.verify
 import org.junit.jupiter.api.Test
@@ -69,5 +70,24 @@ class BookmarkServiceTest {
         verify (exactly = 1){mockBookmarkRepository.save(bookmarkRequest)}
     }
 
+    @Test
+    fun `should call repository delete `(){
+        every { mockBookmarkRepository.findByIdOrNull(10) } returns Bookmark(10,"Title","Url")
+        every { mockBookmarkRepository.delete(any()) } returns Unit
+        bookmarkService.deleteBookmark(10)
+
+        verify(exactly = 1) { mockBookmarkRepository.findByIdOrNull(10) }
+        verify(exactly = 1) { mockBookmarkRepository.delete(any()) }
+    }
+
+    @Test
+    fun `should throw ResponseStatusException for delete when id not found` (){
+        // In addition to check the exception type, also check the status code and message
+        every { mockBookmarkRepository.findByIdOrNull(1) } returns null
+
+
+        val throwable = assertThrows<ResponseStatusException> { bookmarkService.deleteBookmark(1) }
+        assertEquals(throwable.reason, "Id not found")
+    }
 }
 

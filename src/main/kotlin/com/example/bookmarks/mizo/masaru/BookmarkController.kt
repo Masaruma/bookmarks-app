@@ -1,5 +1,6 @@
 package com.example.bookmarks.mizo.masaru
 
+import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -8,7 +9,6 @@ class BookmarkController(val bookmarkService: BookmarkService) {
     @GetMapping("/api/v1/bookmarks")
     fun getAllBookmarks(): List<Bookmark> {
         return bookmarkService.getAllBookmarks()
-
     }
 
     @GetMapping("/api/v1/bookmarks/{id}")
@@ -19,5 +19,11 @@ class BookmarkController(val bookmarkService: BookmarkService) {
     @PostMapping("/api/v1/bookmarks")
     fun saveBookmark(@RequestBody bookmark: Bookmark): Bookmark {
         return bookmarkService.saveBookmark(bookmark)
+    }
+
+    @DeleteMapping("/api/v1/bookmarks/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    fun deleteBookmark(@PathVariable("id") id: Long) {
+        return bookmarkService.deleteBookmark(id)
     }
 }
