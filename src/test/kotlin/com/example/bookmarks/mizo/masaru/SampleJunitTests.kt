@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 
 class SampleJunitTests {
 
-    @BeforeEach  // Runs before each test
+    @BeforeEach // Runs before each test
     fun setup() {
         // Initialize any test object - you want to create a new object for every test
         // テスト・オブジェクトの初期化 - テストごとに新しいオブジェクトを作成したい。

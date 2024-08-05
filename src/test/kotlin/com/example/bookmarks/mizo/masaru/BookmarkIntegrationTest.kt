@@ -11,7 +11,6 @@ import org.springframework.http.MediaType
 import org.springframework.web.client.RestClient
 import org.springframework.web.client.body
 
-
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class BookmarkIntegrationTest {
     val defaultClient = RestClient.create()
@@ -45,12 +44,11 @@ class BookmarkIntegrationTest {
         assertEquals(bookmarks.size, 1)
         assertEquals(bookmarks[0].title, "test1")
         assertEquals(bookmarks[0].url, "www.test1.com")
-
     }
 
     @Test
     fun `should delete bookmark from database `() {
-        val savedBookmark = bookmarkRepository.save(Bookmark(title="test1", url = "www.test1.com"))
+        val savedBookmark = bookmarkRepository.save(Bookmark(title = "test1", url = "www.test1.com"))
         val entity = defaultClient.delete()
             .uri("http://localhost:$port/api/v1/bookmarks/${savedBookmark.id}")
             .retrieve()
@@ -60,16 +58,15 @@ class BookmarkIntegrationTest {
 
         assertEquals(entity.statusCode, HttpStatusCode.valueOf(204))
         assertEquals(bookmarks.size, 0)
-
     }
 
     @Test
-    fun `should get all bookmarks from database `(){
+    fun `should get all bookmarks from database `() {
         val bookmarks = bookmarkRepository.saveAll(
             listOf(
                 Bookmark(title = "test1", url = "www.test1.com"),
-                Bookmark(title = "test2", url = "www.test2.com")
-            )
+                Bookmark(title = "test2", url = "www.test2.com"),
+            ),
         )
 
         val allBookmarks = defaultClient.get()
@@ -81,11 +78,10 @@ class BookmarkIntegrationTest {
         assertEquals(allBookmarks.body?.size, bookmarks.size)
         assertEquals(allBookmarks.body?.get(0), bookmarks[0])
         assertEquals(allBookmarks.body?.get(1), bookmarks.get(1))
-
     }
 
     @Test
-    fun `should get a single bookmark from database`(){
+    fun `should get a single bookmark from database`() {
         val bookmark = bookmarkRepository.save(Bookmark(title = "test1", url = "www.test1.com"))
 
         val getBookmark = defaultClient.get()
@@ -96,5 +92,4 @@ class BookmarkIntegrationTest {
         assertEquals(getBookmark.statusCode, HttpStatusCode.valueOf(200))
         assertEquals(getBookmark.body, bookmark)
     }
-
 }

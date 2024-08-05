@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
-
 // We have a car and it has two methods and we will try to demonstrate test doubles by using Mock, Spy and Stub
 // ここでは、モック、スパイ、スタブを使って、テスト・ダブルを試してみます。
 open class Car {
@@ -13,14 +12,13 @@ open class Car {
     open fun speed() = 100
 }
 
-
 /**
  *  What: A mock car will pretend to drive and let us check if drive() was called during our tests
  *  What: モックカーが走るふりをして、テスト中にdrive()が呼ばれたかどうかをチェックする。
  *  When: Mocks are used when you want to verify that certain interactions happened
  *  When: いつ モックは、特定のインタラクションが起こったことを検証したいときに使用します。
  */
-class MockCar: Car() {
+class MockCar : Car() {
     var driveWasCalled = false
 
     override fun drive() {
@@ -32,7 +30,7 @@ class MockCar: Car() {
  *  What: A spy Car will actually drive and also like mock keep track of whether drive() was called
  *  What: スパイ・カーが実際に走行し、drive()が呼ばれたかどうかをモックが追跡する。
  */
-class SpyCar(val realCar: Car): Car() {
+class SpyCar(val realCar: Car) : Car() {
     var driveWasCalled = false
 
     override fun drive() {
@@ -41,7 +39,6 @@ class SpyCar(val realCar: Car): Car() {
     }
 
     override fun speed() = realCar.speed()
-
 }
 
 /**
@@ -71,7 +68,7 @@ class TestDoubles {
 
     @Test
     fun `spy test`() {
-        val realCar = Car()  // real instance, actual production code
+        val realCar = Car() // real instance, actual production code
         val spyCar = SpyCar(realCar)
 
         spyCar.drive()
@@ -88,4 +85,3 @@ class TestDoubles {
         assertEquals(stubCar.speed(), 999)
     }
 }
-

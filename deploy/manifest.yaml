@@ -1,0 +1,7 @@
+applications:
+  - name: bookmarks-mizo-masaru # Name of the application (cf apps )
+    path: ../build/libs/bookmarks-mizo-masaru-0.0.1-SNAPSHOT.jar # Relative path to the runnable jar (not the plain jar)
+    memory: 1G # configure memory for the app
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'  # Specifically to the platform, only for Sandbox
+

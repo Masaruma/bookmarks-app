@@ -7,8 +7,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
-import java.awt.PageAttributes
-import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class BookmarkControllerTest {
@@ -26,7 +24,6 @@ class BookmarkControllerTest {
 
     @Test
     fun `should return bookmark response list`() {
-
         // you need to return a list from the mockBookmarkService
 
         val expectedResponse = """
@@ -50,7 +47,7 @@ class BookmarkControllerTest {
 
     @Test
     fun `should call mock bookmark service`() {
-       // when a controller is called
+        // when a controller is called
         val bookmarkController = BookmarkController(mockBookmarkService)
 
         bookmarkController.getAllBookmarks()
@@ -67,7 +64,6 @@ class BookmarkControllerTest {
 
     @Test
     fun `should call mock single bookmark service and return single bookmark JSON`() {
-
         val expectedResponse = """
             {
             "id": 100,
@@ -88,22 +84,23 @@ class BookmarkControllerTest {
             { "title": "sample", "url": "sample.com" }
         """.trimIndent()
 
-        mockMvc.perform(post("/api/v1/bookmarks")
-            .content(requestBody)
-            .contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(
+            post("/api/v1/bookmarks")
+                .content(requestBody)
+                .contentType(MediaType.APPLICATION_JSON),
+        )
             .andExpect(status().isOk)
-     // TODO: Verify if the the response from mockMVC is equal to JSON content
+        // TODO: Verify if the the response from mockMVC is equal to JSON content
 
         assertTrue(mockBookmarkService.saveBookmarkWasCalled)
     }
 
     @Test
-    fun `should return status 204 for delete request and call service`(){
+    fun `should return status 204 for delete request and call service`() {
         // TODO
         mockMvc.perform(delete("/api/v1/bookmarks/100"))
             .andExpect(status().isNoContent)
 
         assertTrue(mockBookmarkService.deleteBookWasCalled)
     }
-
 }

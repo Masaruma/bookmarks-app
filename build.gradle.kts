@@ -4,6 +4,7 @@ plugins {
 	kotlin("plugin.jpa") version "1.9.24"
 	kotlin("jvm") version "1.9.24"
 	kotlin("plugin.spring") version "1.9.24"
+	id("com.diffplug.spotless") version "6.25.0"
 }
 
 group = "com.example"
@@ -41,3 +42,41 @@ kotlin {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+tasks.register("hello"){
+	println("Hello World")
+}
+tasks.register("morning"){
+	dependsOn("hello")
+	println("Morning")
+}
+
+
+configure<com.diffplug.gradle.spotless.SpotlessExtension> {
+	kotlin {
+		ktfmt()
+		ktlint()
+			.editorConfigOverride(
+				mapOf(
+					"ktlint_standard_no-wildcard-imports" to "disabled"
+				)
+			)
+	}
+}
+
+// TO copy the build code from frontend to backend
+
+
+tasks.jar {  // build-in tasks for creating the JAR file
+	dependsOn("copyFrontend")
+}
+
+tasks.register("buildFrontend") {
+	// npm run build
+}
+
+tasks.register("copyFrontend"){
+	dependsOn("buildFrontend")
+	// copy the build folder from frontend to src/main/resources/static of backend
+}
+

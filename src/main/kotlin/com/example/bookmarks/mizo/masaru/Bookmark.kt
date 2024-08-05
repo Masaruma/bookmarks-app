@@ -9,5 +9,5 @@ import jakarta.persistence.Id
 data class Bookmark(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: Long? = null,
     val title: String,
-    val url: String
+    val url: String,
 )

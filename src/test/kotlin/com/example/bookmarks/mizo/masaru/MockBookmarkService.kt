@@ -1,6 +1,6 @@
 package com.example.bookmarks.mizo.masaru
 
-class MockBookmarkService: BookmarkService {
+class MockBookmarkService : BookmarkService {
     var getAllBookmarksWasCalled = false
     var getSingleBookmarkWasCalled = false
     var saveBookmarkWasCalled = false
@@ -11,7 +11,7 @@ class MockBookmarkService: BookmarkService {
         getAllBookmarksWasCalled = true
         return listOf(
             Bookmark(1, "My First Bookmark", "www.example.com"),
-            Bookmark(2, "Spring Boot Overview", "www.spring-boot.com")
+            Bookmark(2, "Spring Boot Overview", "www.spring-boot.com"),
         )
     }
 
@@ -22,14 +22,12 @@ class MockBookmarkService: BookmarkService {
 
     override fun saveBookmark(bookmark: Bookmark): Bookmark {
         saveBookmarkWasCalled = true
-        return Bookmark(1,"","")
+        return Bookmark(1, "", "")
     }
 
     override fun deleteBookmark(id: Long) {
         deleteBookWasCalled = true
     }
-
-
 }
 
 // Use a library to mock the actual implementation

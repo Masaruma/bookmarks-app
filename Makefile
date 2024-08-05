@@ -1,6 +1,3 @@
-say_hello:
-	@echo "heloo world"
-
 clean:
 	./gradlew clean
 
@@ -10,4 +7,7 @@ test:
 build:
 	,/gradlew build
 
-pre_commit: clean test build
+lint:
+	./gradlew spotlessApply
+
+pre_commit: clean lint test build
