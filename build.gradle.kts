@@ -25,6 +25,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.flywaydb:flyway-core")
+	implementation("org.flywaydb:flyway-database-postgresql")
 	runtimeOnly("com.h2database:h2")
 	runtimeOnly("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
@@ -32,6 +34,14 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	testImplementation("io.mockk:mockk:1.13.12")
 }
+
+// It failed because we already have some tables (bookmark) created in the database
+// 1. You manually clean the database and have it as and empty - Drop all the DB tables
+//	1.1 To delete all the existing tables/ indexes/  - Drop
+//		Easiest way to have a fresh DB
+// 1.2. you need to remove the schema.sql and put it in the flyway migration
+// 2. You tell flyway, ok you can continue from here and leave the existing table as it is -- Advanced
+
 
 kotlin {
 	compilerOptions {

@@ -1,0 +1,1 @@
+CREATE TABLE sample (id serial primary key , sample1 text)
