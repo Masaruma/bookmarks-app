@@ -1,5 +1,6 @@
 package com.example.bookmarks.mizo.masaru
 
+import org.slf4j.LoggerFactory
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.http.HttpStatusCode
 import org.springframework.stereotype.Service
@@ -14,6 +15,9 @@ interface BookmarkService {
 
 @Service
 class DefaultBookmarkService(val bookmarkRepository: BookmarkRepository) : BookmarkService {
+
+    val logger = LoggerFactory.getLogger(DefaultBookmarkService::class.java)
+
     override fun getAllBookmarks(): List<Bookmark> {
         return bookmarkRepository.findAll()
     }
@@ -24,7 +28,10 @@ class DefaultBookmarkService(val bookmarkRepository: BookmarkRepository) : Bookm
     }
 
     override fun saveBookmark(bookmark: Bookmark): Bookmark {
-        return bookmarkRepository.save(bookmark)
+        val saved = bookmarkRepository.save(bookmark)
+        println("(println) Saved to database: " + saved)
+        logger.debug("(log) Saved to database: {}", saved)
+        return saved
     }
 
     override fun deleteBookmark(id: Long) {

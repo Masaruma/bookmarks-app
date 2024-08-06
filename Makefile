@@ -4,10 +4,10 @@ clean:
 test:
 	./gradlew test
 
-build:
-	,/gradlew build
+package:
+	./gradlew assemble
 
 lint:
 	./gradlew spotlessApply
 
-pre_commit: clean lint test build
+pre-commit: clean lint test package
