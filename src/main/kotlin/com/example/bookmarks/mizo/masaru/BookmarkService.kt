@@ -24,7 +24,7 @@ class DefaultBookmarkService(val bookmarkRepository: BookmarkRepository) : Bookm
 
     override fun getSingleBookmark(id: Long): Bookmark {
         return bookmarkRepository.findByIdOrNull(id)
-            ?: throw ResponseStatusException(HttpStatusCode.valueOf(404), "Id not found")
+            ?: throw BookmarkNotFoundException("Id not found")
     }
 
     override fun saveBookmark(bookmark: Bookmark): Bookmark {
@@ -37,7 +37,8 @@ class DefaultBookmarkService(val bookmarkRepository: BookmarkRepository) : Bookm
     override fun deleteBookmark(id: Long) {
         // Options 1: If ID exists return void or ID does not exist throw error
         var bookmark =
-            bookmarkRepository.findByIdOrNull(id) ?: throw ResponseStatusException(HttpStatusCode.valueOf(404), "Id not found")
+            bookmarkRepository.findByIdOrNull(id)
+                ?: throw BookmarkNotFoundException("Id not found")
 
         bookmarkRepository.delete(bookmark)
 

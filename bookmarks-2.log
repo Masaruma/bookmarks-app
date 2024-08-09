@@ -1,0 +1,810 @@
+2024-08-08 10:16:01,899 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 79120 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 10:16:01,901 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 10:16:02,316 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 10:16:02,340 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2024-08-08 10:16:02,595 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 10:16:02,605 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:16:02,606 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 10:16:02,607 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 10:16:02,637 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 10:16:02,638 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 706 ms
+2024-08-08 10:16:02,654 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 10:16:02,742 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ca14cf4
+2024-08-08 10:16:02,743 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 10:16:02,748 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 10:16:02,856 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 10:16:02,893 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.018s)
+2024-08-08 10:16:02,912 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 10:16:02,914 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 10:16:02,965 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 10:16:02,993 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 10:16:03,007 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 10:16:03,136 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 10:16:03,493 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 10:16:03,496 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:16:03,634 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 10:16:03,644 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 10:16:03,787 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:16:03,797 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 10:16:03,802 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 2.096 seconds (process running for 2.363)
+2024-08-08 10:17:04,603 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:17:04,604 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 10:17:04,605 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 10:17:07,398 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 79276 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 10:17:07,401 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 10:17:07,791 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 10:17:07,812 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2024-08-08 10:17:08,091 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 10:17:08,097 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:17:08,098 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 10:17:08,098 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 10:17:08,121 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 10:17:08,121 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 664 ms
+2024-08-08 10:17:08,138 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 10:17:08,213 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f363abd
+2024-08-08 10:17:08,214 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 10:17:08,219 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 10:17:08,336 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 10:17:08,375 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.022s)
+2024-08-08 10:17:08,392 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 10:17:08,394 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 10:17:08,439 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 10:17:08,463 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 10:17:08,479 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 10:17:08,616 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 10:17:09,012 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 10:17:09,014 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:17:09,174 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 10:17:09,187 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 10:17:09,356 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:17:09,362 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 10:17:09,367 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 2.213 seconds (process running for 2.598)
+2024-08-08 10:23:56,993 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:23:56,995 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 10:23:56,997 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 10:23:59,478 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 80077 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 10:23:59,480 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 10:23:59,793 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 10:23:59,812 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-08-08 10:24:00,032 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 10:24:00,040 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:24:00,041 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 10:24:00,041 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 10:24:00,066 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 10:24:00,067 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 567 ms
+2024-08-08 10:24:00,088 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 10:24:00,154 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52b959df
+2024-08-08 10:24:00,155 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 10:24:00,161 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 10:24:00,272 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 10:24:00,307 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.017s)
+2024-08-08 10:24:00,322 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 10:24:00,323 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 10:24:00,364 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 10:24:00,387 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 10:24:00,399 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 10:24:00,540 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 10:24:00,906 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 10:24:00,908 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:24:01,046 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 10:24:01,055 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 10:24:01,212 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:24:01,221 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 10:24:01,226 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.935 seconds (process running for 2.189)
+2024-08-08 10:25:27,140 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:25:27,142 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 10:25:27,143 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 10:27:21,898 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 80531 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 10:27:21,900 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 10:27:22,194 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 10:27:22,214 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-08-08 10:27:22,433 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 10:27:22,445 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:27:22,448 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 10:27:22,449 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 10:27:22,478 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 10:27:22,480 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 560 ms
+2024-08-08 10:27:22,503 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 10:27:22,596 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b5b9333
+2024-08-08 10:27:22,597 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 10:27:22,604 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 10:27:22,727 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 10:27:22,771 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.024s)
+2024-08-08 10:27:22,798 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 10:27:22,799 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 10:27:22,846 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 10:27:22,869 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 10:27:22,883 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 10:27:23,039 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 10:27:23,497 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 10:27:23,498 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:27:23,637 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 10:27:23,646 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 10:27:23,808 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:27:23,817 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 10:27:23,823 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 2.111 seconds (process running for 2.348)
+2024-08-08 10:27:38,378 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 10:27:38,379 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 10:27:38,380 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 10:27:48,386 ERROR [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] -- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: There was a a problem] with root cause
+java.lang.IllegalArgumentException: There was a a problem
+	at com.example.bookmarks.mizo.masaru.BookmarkController.getAllBookmarks(BookmarkController.kt:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method.callMethod(CallerImpl.kt:97)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method$Instance.call(CallerImpl.kt:113)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callDefaultMethod$kotlin_reflection(KCallableImpl.kt:207)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callBy(KCallableImpl.kt:112)
+	at org.springframework.web.method.support.InvocableHandlerMethod$KotlinDelegate.invokeFunction(InvocableHandlerMethod.java:334)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-08 10:32:31,431 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 81190 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 10:32:31,433 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 10:32:32,053 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 10:32:32,101 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-08-08 10:32:32,392 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 10:32:32,398 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:32:32,403 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 10:32:32,403 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 10:32:32,428 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 10:32:32,429 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 967 ms
+2024-08-08 10:32:32,448 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 10:32:32,536 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70b2fa10
+2024-08-08 10:32:32,537 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 10:32:32,543 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 10:32:32,643 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 10:32:32,683 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.022s)
+2024-08-08 10:32:32,709 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 10:32:32,711 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 10:32:32,766 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 10:32:32,793 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 10:32:32,806 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 10:32:32,949 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 10:32:33,326 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 10:32:33,327 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:32:33,468 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 10:32:33,476 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 10:32:33,622 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:32:33,633 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 10:32:33,638 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 2.405 seconds (process running for 2.685)
+2024-08-08 10:32:40,209 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 10:32:40,209 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 10:32:40,210 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 10:40:36,973 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:40:36,978 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 10:40:36,980 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 10:40:41,791 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 82204 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 10:40:41,793 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 10:40:42,087 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 10:40:42,108 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-08-08 10:40:42,312 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 10:40:42,317 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:40:42,318 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 10:40:42,318 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 10:40:42,339 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 10:40:42,340 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 529 ms
+2024-08-08 10:40:42,355 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 10:40:42,427 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c9ef6e9
+2024-08-08 10:40:42,428 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 10:40:42,433 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 10:40:42,538 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 10:40:42,572 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.017s)
+2024-08-08 10:40:42,590 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 10:40:42,592 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 10:40:42,635 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 10:40:42,658 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 10:40:42,672 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 10:40:42,821 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 10:40:43,189 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 10:40:43,191 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:40:43,314 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 10:40:43,322 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 10:40:43,455 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:40:43,466 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 10:40:43,472 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.877 seconds (process running for 2.149)
+2024-08-08 10:41:28,568 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 10:41:28,569 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 10:41:28,570 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 10:41:28,658 ERROR [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] -- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.example.bookmarks.mizo.masaru.BookmarkNotFoundException: Id not found] with root cause
+com.example.bookmarks.mizo.masaru.BookmarkNotFoundException: Id not found
+	at com.example.bookmarks.mizo.masaru.DefaultBookmarkService.getSingleBookmark(BookmarkService.kt:27)
+	at com.example.bookmarks.mizo.masaru.BookmarkController.getSingleBookmark(BookmarkController.kt:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method.callMethod(CallerImpl.kt:97)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method$Instance.call(CallerImpl.kt:113)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callDefaultMethod$kotlin_reflection(KCallableImpl.kt:207)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callBy(KCallableImpl.kt:112)
+	at org.springframework.web.method.support.InvocableHandlerMethod$KotlinDelegate.invokeFunction(InvocableHandlerMethod.java:334)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-08 10:51:54,767 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 83563 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 10:51:54,768 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 10:51:55,065 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 10:51:55,084 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-08-08 10:51:55,293 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 10:51:55,300 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:51:55,301 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 10:51:55,301 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 10:51:55,322 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 10:51:55,323 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 535 ms
+2024-08-08 10:51:55,338 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 10:51:55,417 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70ede57d
+2024-08-08 10:51:55,418 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 10:51:55,425 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 10:51:55,534 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 10:51:55,615 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.062s)
+2024-08-08 10:51:55,648 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 10:51:55,650 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 10:51:55,693 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 10:51:55,713 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 10:51:55,726 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 10:51:55,856 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 10:51:56,196 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 10:51:56,197 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 10:51:56,317 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 10:51:56,324 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 10:51:56,468 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 10:51:56,477 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 10:51:56,482 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.925 seconds (process running for 2.174)
+2024-08-08 10:52:09,113 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 10:52:09,114 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 10:52:09,114 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 0 ms
+2024-08-08 11:26:11,892 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:26:11,897 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 11:26:11,899 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 11:26:14,090 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 87810 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 11:26:14,091 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 11:26:14,397 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 11:26:14,416 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-08-08 11:26:14,629 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 11:26:14,637 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:26:14,638 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 11:26:14,638 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 11:26:14,667 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 11:26:14,667 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 544 ms
+2024-08-08 11:26:14,684 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 11:26:14,759 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@eed890d
+2024-08-08 11:26:14,760 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 11:26:14,765 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 11:26:14,855 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 11:26:14,899 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.023s)
+2024-08-08 11:26:14,916 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 11:26:14,920 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 11:26:14,968 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 11:26:14,990 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 11:26:15,003 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 11:26:15,145 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 11:26:15,482 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 11:26:15,484 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:26:15,601 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 11:26:15,610 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 11:26:15,757 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:26:15,763 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 11:26:15,767 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.944 seconds (process running for 2.295)
+2024-08-08 11:26:27,436 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 11:26:27,436 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 11:26:27,437 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 0 ms
+2024-08-08 11:43:10,563 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:43:10,568 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 11:43:10,571 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 11:43:26,496 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 89939 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 11:43:26,496 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 11:43:26,767 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 11:43:26,788 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-08-08 11:43:27,048 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 11:43:27,053 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:43:27,054 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 11:43:27,054 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 11:43:27,079 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 11:43:27,080 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 561 ms
+2024-08-08 11:43:27,096 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 11:43:27,178 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ca14cf4
+2024-08-08 11:43:27,179 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 11:43:27,184 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 11:43:27,289 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 11:43:27,328 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.019s)
+2024-08-08 11:43:27,365 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 11:43:27,367 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 11:43:27,420 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 11:43:27,446 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 11:43:27,458 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 11:43:27,577 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 11:43:27,914 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 11:43:27,915 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:43:28,065 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 11:43:28,096 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 11:43:28,247 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:43:28,257 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 11:43:28,261 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.981 seconds (process running for 2.302)
+2024-08-08 11:43:54,574 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 11:43:54,574 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 11:43:54,575 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 11:46:33,674 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:46:33,679 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 11:46:33,681 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 11:46:35,718 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 90366 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 11:46:35,719 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 11:46:36,001 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 11:46:36,020 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-08-08 11:46:36,222 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 11:46:36,229 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:46:36,230 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 11:46:36,230 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 11:46:36,252 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 11:46:36,253 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 515 ms
+2024-08-08 11:46:36,271 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 11:46:36,347 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@631c6d11
+2024-08-08 11:46:36,348 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 11:46:36,353 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 11:46:36,459 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 11:46:36,500 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.022s)
+2024-08-08 11:46:36,525 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 11:46:36,527 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 11:46:36,574 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 11:46:36,596 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 11:46:36,609 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 11:46:36,746 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 11:46:37,105 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 11:46:37,106 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:46:37,230 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 11:46:37,239 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 11:46:37,385 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:46:37,396 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 11:46:37,401 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.881 seconds (process running for 2.244)
+2024-08-08 11:46:41,018 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:46:41,021 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 11:46:41,023 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 11:46:54,695 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 90435 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 11:46:54,695 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 11:46:54,974 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 11:46:54,994 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-08-08 11:46:55,224 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 11:46:55,229 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:46:55,230 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 11:46:55,230 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 11:46:55,250 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 11:46:55,251 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 534 ms
+2024-08-08 11:46:55,268 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 11:46:55,345 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70ede57d
+2024-08-08 11:46:55,346 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 11:46:55,351 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 11:46:55,449 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 11:46:55,526 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.047s)
+2024-08-08 11:46:55,545 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 11:46:55,547 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 11:46:55,592 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 11:46:55,616 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 11:46:55,627 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 11:46:55,760 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 11:46:56,097 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 11:46:56,099 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 11:46:56,222 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 11:46:56,231 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 11:46:56,378 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 11:46:56,383 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 11:46:56,388 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.885 seconds (process running for 2.135)
+2024-08-08 11:47:03,340 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 11:47:03,340 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 11:47:03,341 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 12:03:07,859 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:03:07,860 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 12:03:07,861 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 12:03:09,269 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 92488 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 12:03:09,270 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 12:03:09,484 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 12:03:09,507 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2024-08-08 12:03:09,667 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 12:03:09,671 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:03:09,672 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 12:03:09,672 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 12:03:09,691 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 12:03:09,692 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 402 ms
+2024-08-08 12:03:09,708 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 12:03:09,779 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c538eb2
+2024-08-08 12:03:09,780 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 12:03:09,784 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 12:03:09,860 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 12:03:09,888 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.013s)
+2024-08-08 12:03:09,904 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 12:03:09,906 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 12:03:09,944 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 12:03:09,963 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 12:03:09,975 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 12:03:10,073 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 12:03:10,368 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 12:03:10,369 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:03:10,462 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 12:03:10,468 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 12:03:10,569 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:03:10,577 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 12:03:10,581 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.474 seconds (process running for 1.7)
+2024-08-08 12:20:10,924 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:20:10,925 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 12:20:10,927 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 12:20:12,389 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 94642 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 12:20:12,390 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 12:20:12,606 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 12:20:12,629 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2024-08-08 12:20:12,781 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 12:20:12,785 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:20:12,786 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 12:20:12,786 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 12:20:12,803 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 12:20:12,803 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 395 ms
+2024-08-08 12:20:12,818 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 12:20:12,892 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20d19f2c
+2024-08-08 12:20:12,893 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 12:20:12,897 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 12:20:12,978 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 12:20:13,005 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.013s)
+2024-08-08 12:20:13,026 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 12:20:13,027 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 12:20:13,066 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 12:20:13,085 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 12:20:13,095 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 12:20:13,195 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 12:20:13,486 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 12:20:13,487 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:20:13,581 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 12:20:13,587 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 12:20:13,689 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:20:13,698 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 12:20:13,702 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.465 seconds (process running for 1.675)
+2024-08-08 12:20:19,273 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 12:20:19,274 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 12:20:19,275 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 12:20:58,000 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:20:58,003 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 12:20:58,005 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 12:20:59,636 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 94781 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 12:20:59,637 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 12:20:59,847 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 12:20:59,862 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2024-08-08 12:21:00,043 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 12:21:00,049 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:21:00,050 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 12:21:00,050 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 12:21:00,071 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 12:21:00,072 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 413 ms
+2024-08-08 12:21:00,089 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 12:21:00,151 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@65be88ae
+2024-08-08 12:21:00,151 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 12:21:00,156 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 12:21:00,237 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 12:21:00,257 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.012s)
+2024-08-08 12:21:00,275 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 12:21:00,277 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 12:21:00,308 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 12:21:00,326 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 12:21:00,336 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 12:21:00,449 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 12:21:00,730 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 12:21:00,731 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:21:00,825 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 12:21:00,831 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 12:21:00,935 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:21:00,943 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 12:21:00,948 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.472 seconds (process running for 1.669)
+2024-08-08 12:21:03,520 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 12:21:03,520 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 12:21:03,521 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 12:21:42,937 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:21:42,938 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 12:21:42,939 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 12:21:44,387 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 94931 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 12:21:44,388 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 12:21:44,602 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 12:21:44,623 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2024-08-08 12:21:44,796 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 12:21:44,800 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:21:44,800 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 12:21:44,800 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 12:21:44,818 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 12:21:44,819 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 413 ms
+2024-08-08 12:21:44,832 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 12:21:44,904 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@65be88ae
+2024-08-08 12:21:44,905 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 12:21:44,909 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 12:21:44,985 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 12:21:45,009 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.012s)
+2024-08-08 12:21:45,034 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 12:21:45,036 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 12:21:45,075 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 12:21:45,094 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 12:21:45,105 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 12:21:45,211 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 12:21:45,502 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 12:21:45,503 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:21:45,604 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 12:21:45,611 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 12:21:45,723 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:21:45,733 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 12:21:45,738 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.512 seconds (process running for 1.745)
+2024-08-08 12:21:48,166 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 12:21:48,166 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 12:21:48,167 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 12:21:48,231 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:441] -- Failure in @ExceptionHandler com.example.bookmarks.mizo.masaru.BookmarkController#catchBookmarkNotFoundException(BookmarkNotFoundException)
+kotlin.reflect.jvm.internal.KotlinReflectionInternalError: Function 'greet' (JVM signature: catchBookmarkNotFoundException$greet(Ljava/lang/String;)V) not resolved in class kotlin.jvm.internal.Intrinsics$Kotlin: no members found
+	at kotlin.reflect.jvm.internal.KDeclarationContainerImpl.findFunctionDescriptor(KDeclarationContainerImpl.kt:149)
+	at kotlin.reflect.jvm.internal.KFunctionImpl$descriptor$2.invoke(KFunctionImpl.kt:59)
+	at kotlin.reflect.jvm.internal.KFunctionImpl$descriptor$2.invoke(KFunctionImpl.kt:58)
+	at kotlin.reflect.jvm.internal.ReflectProperties$LazySoftVal.invoke(ReflectProperties.java:70)
+	at kotlin.reflect.jvm.internal.ReflectProperties$Val.getValue(ReflectProperties.java:32)
+	at kotlin.reflect.jvm.internal.KFunctionImpl.getDescriptor(KFunctionImpl.kt:58)
+	at kotlin.reflect.jvm.internal.KFunctionImpl.toString(KFunctionImpl.kt:198)
+	at kotlin.jvm.internal.FunctionReference.toString(FunctionReference.java:130)
+	at java.base/java.lang.String.valueOf(String.java:4507)
+	at java.base/java.io.PrintStream.println(PrintStream.java:1187)
+	at com.example.bookmarks.mizo.masaru.BookmarkController.catchBookmarkNotFoundException(BookmarkController.kt:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method.callMethod(CallerImpl.kt:97)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method$Instance.call(CallerImpl.kt:113)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callDefaultMethod$kotlin_reflection(KCallableImpl.kt:207)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callBy(KCallableImpl.kt:112)
+	at org.springframework.web.method.support.InvocableHandlerMethod$KotlinDelegate.invokeFunction(InvocableHandlerMethod.java:334)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:74)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:175)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-08 12:21:48,234 ERROR [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:175] -- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.example.bookmarks.mizo.masaru.BookmarkNotFoundException: Id not found] with root cause
+com.example.bookmarks.mizo.masaru.BookmarkNotFoundException: Id not found
+	at com.example.bookmarks.mizo.masaru.DefaultBookmarkService.getSingleBookmark(BookmarkService.kt:27)
+	at com.example.bookmarks.mizo.masaru.BookmarkController.getSingleBookmark(BookmarkController.kt:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method.callMethod(CallerImpl.kt:97)
+	at kotlin.reflect.jvm.internal.calls.CallerImpl$Method$Instance.call(CallerImpl.kt:113)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callDefaultMethod$kotlin_reflection(KCallableImpl.kt:207)
+	at kotlin.reflect.jvm.internal.KCallableImpl.callBy(KCallableImpl.kt:112)
+	at org.springframework.web.method.support.InvocableHandlerMethod$KotlinDelegate.invokeFunction(InvocableHandlerMethod.java:334)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-08-08 12:23:26,978 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:23:26,980 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 12:23:26,982 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 12:23:28,405 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 95193 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 12:23:28,405 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 12:23:28,612 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 12:23:28,634 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2024-08-08 12:23:28,796 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 12:23:28,800 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:23:28,800 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 12:23:28,801 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 12:23:28,816 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 12:23:28,816 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 394 ms
+2024-08-08 12:23:28,833 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 12:23:28,900 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61608e1a
+2024-08-08 12:23:28,900 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 12:23:28,905 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 12:23:28,979 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 12:23:29,008 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.014s)
+2024-08-08 12:23:29,037 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 12:23:29,039 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 12:23:29,079 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 12:23:29,101 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 12:23:29,113 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 12:23:29,220 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 12:23:29,502 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 12:23:29,503 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:23:29,595 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 12:23:29,602 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 12:23:29,707 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:23:29,715 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 12:23:29,720 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.475 seconds (process running for 1.698)
+2024-08-08 12:23:31,482 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 12:23:31,482 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 12:23:31,483 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms
+2024-08-08 12:24:20,698 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:24:20,701 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2024-08-08 12:24:20,703 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2024-08-08 12:24:22,095 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:50] -- Starting BookmarksMizoMasaruApplicationKt using Java 22.0.1 with PID 95349 (/Users/user/bookmarks-mizo-masaru/build/classes/kotlin/main started by user in /Users/user/bookmarks-mizo-masaru)
+2024-08-08 12:24:22,095 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [SpringApplication.java:654] -- No active profile set, falling back to 1 default profile: "default"
+2024-08-08 12:24:22,298 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:143] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 12:24:22,315 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:211] -- Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-08-08 12:24:22,492 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:111] -- Tomcat initialized with port 8080 (http)
+2024-08-08 12:24:22,495 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:24:22,496 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] -- Starting service [Tomcat]
+2024-08-08 12:24:22,496 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] -- Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-08 12:24:22,514 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring embedded WebApplicationContext
+2024-08-08 12:24:22,514 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] -- Root WebApplicationContext: initialization completed in 400 ms
+2024-08-08 12:24:22,528 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2024-08-08 12:24:22,591 INFO [main] c.z.h.p.HikariPool [HikariPool.java:554] -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38588dea
+2024-08-08 12:24:22,592 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2024-08-08 12:24:22,596 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] -- H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5488/bookmarks'
+2024-08-08 12:24:22,674 INFO [main] o.f.c.FlywayExecutor [Slf4jLog.java:37] -- Database: jdbc:postgresql://localhost:5488/bookmarks (PostgreSQL 16.3)
+2024-08-08 12:24:22,703 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:37] -- Successfully validated 4 migrations (execution time 00:00.012s)
+2024-08-08 12:24:22,723 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Current version of schema "public": 3
+2024-08-08 12:24:22,725 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] -- Schema "public" is up to date. No migration necessary.
+2024-08-08 12:24:22,758 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] -- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 12:24:22,775 INFO [main] o.h.Version [Version.java:44] -- HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 12:24:22,784 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] -- HHH000026: Second-level cache disabled
+2024-08-08 12:24:22,884 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 12:24:23,167 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:59] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 12:24:23,168 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 12:24:23,262 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:236] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 12:24:23,268 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] -- Adding welcome page: class path resource [static/index.html]
+2024-08-08 12:24:23,371 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] -- Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 12:24:23,379 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:243] -- Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 12:24:23,383 INFO [main] c.e.b.m.m.BookmarksMizoMasaruApplicationKt [StartupInfoLogger.java:56] -- Started BookmarksMizoMasaruApplicationKt in 1.458 seconds (process running for 1.676)
+2024-08-08 12:24:38,142 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-08 12:24:38,142 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] -- Initializing Servlet 'dispatcherServlet'
+2024-08-08 12:24:38,143 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] -- Completed initialization in 1 ms

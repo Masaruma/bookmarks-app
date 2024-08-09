@@ -5,7 +5,10 @@ app:
     password: password
     port: 80
     user: user
+
 logging:
+  file:
+    name: bookmarks-2.log
   level:
     com.example.bookmarks: INFO
   pattern:
@@ -21,4 +24,5 @@ spring:
   h2:
     console:
       enabled: true
+
 
